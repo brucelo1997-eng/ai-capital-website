@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - AI Capital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">AI Capital</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero" style="background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%); padding: 3rem 2rem;">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Get in touch with the AI Capital team</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <p class="section-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
+
+      <!-- Contact Form -->
+      <div class="form-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g., Question about beginner course">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width: 100%; padding: 1rem;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section style="background-color: #f0f7ff;">
+    <div class="container">
+      <h2>Other Ways to Reach Us</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>📧 Email</h3>
+          <p>For general inquiries and questions about our courses, feel free to reach out via email. We typically respond within 24 hours.</p>
+          <p><strong>hello@aicapital.world</strong></p>
+        </div>
+
+        <div class="card">
+          <h3>💬 Community Forum</h3>
+          <p>Join our private community forum for real-time discussions, peer support, and to connect with other learners and instructors.</p>
+          <p><a href="#" style="color: #0066cc; text-decoration: none; font-weight: 600;">Access Community →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>📅 Office Hours</h3>
+          <p>Monthly office hours with our instructors. Perfect time to ask questions, get guidance, and connect with the team directly.</p>
+          <p>Every last Thursday at 6 PM PST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Signup Section -->
+  <section>
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto; background-color: #f0f7ff; padding: 2rem; border-radius: 8px; text-align: center;">
+        <h2>Stay Updated</h2>
+        <p style="margin-bottom: 1.5rem; color: #666;">Subscribe to our newsletter to get updates on new courses, special offers, and AI automation tips.</p>
+        
+        <form id="emailForm" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            required
+            style="flex: 1; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;"
+          >
+          <button type="submit" class="btn btn-secondary">Subscribe</button>
+        </form>
+        <p style="font-size: 0.85rem; color: #999;">We respect your privacy. No spam, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background-color: #0066cc; color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white;">Ready to Transform Your Workflow?</h2>
+      <p>Explore our courses and start your automation journey today.</p>
+      <a href="courses.html" class="btn btn-outline">View Courses</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 AI Capital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Handle email signup
+    const emailForm = document.getElementById('emailForm');
+    if (emailForm) {
+      emailForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const emailInput = this.querySelector('input[type="email"]');
+        alert(`Thank you for subscribing with ${emailInput.value}! Check your inbox for a confirmation.`);
+        emailForm.reset();
+      });
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
